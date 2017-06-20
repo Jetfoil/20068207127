@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>永恒的爱 Canvas Path Grids</title>
+    </head>
+    <body>
+        <canvas id="c" height="300" width="300" style="border:outset hsl(334,95.4%,34.3%);-webkit-font-smoothing:antialiased;"></canvas>
+        <script type="text/javascript">
+            //画竖线
+            var c = document.getElementById("c");
+            var context = c.getContext("2d");
+            context.imageSmoothingEnabled = true;
+            //选择颜色
+            context.fillStyle = "hsl(334,95.4%,34.3%)";
+            //填充文字
+            context.font = "97px sans-self";
+            context.fillText("梁嘉奇", 7, 170);
+            context.fill();
+
+            context.globalCompositeOperation = 'source-atop';
+        </script>
+    </body>
+</html>
